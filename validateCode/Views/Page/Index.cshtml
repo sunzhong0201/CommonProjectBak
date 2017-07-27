@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<link href="~/css/tableStyle.css" rel="stylesheet" />
+<link href="~/css/NavPager.css" rel="stylesheet" />
+
+<h2>Index</h2>
+
+
+<div class="paginator">
+    <h3>用户 静态方法生成的分页的标签</h3>
+    @MvcHtmlString.Create(ViewData["NavString"] as string)
+    <hr />
+</div>

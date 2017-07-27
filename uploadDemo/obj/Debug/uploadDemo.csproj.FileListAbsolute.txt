@@ -1,0 +1,6 @@
+C:\Users\Administrator\documents\visual studio 2013\Projects\Sln20170714\uploadDemo\bin\uploadDemo.dll.config
+C:\Users\Administrator\documents\visual studio 2013\Projects\Sln20170714\uploadDemo\bin\uploadDemo.dll
+C:\Users\Administrator\documents\visual studio 2013\Projects\Sln20170714\uploadDemo\bin\uploadDemo.pdb
+C:\Users\Administrator\documents\visual studio 2013\Projects\Sln20170714\uploadDemo\obj\Debug\uploadDemo.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2013\Projects\Sln20170714\uploadDemo\obj\Debug\uploadDemo.dll
+C:\Users\Administrator\documents\visual studio 2013\Projects\Sln20170714\uploadDemo\obj\Debug\uploadDemo.pdb

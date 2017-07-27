@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/MyAjaxForm.js"></script>
+
+<form method="POST" enctype="multipart/form-data" >
+    <input type="file" name="imgFile" />
+    <input type="button" value="上传" />
+</form>
+<div id="dvImg" style="display:none">
+    <img class="img1" src="#" alt="Alternate Text" />
+   
+</div>
+<div style="display:none">
+    <img class="img1" src="#" alt="Alternate Text" />
+ </div>
+
+
+
+    <script>
+
+        $(':button').click(function () {
+
+            $("form").ajaxSubmit({
+                success: function (data) {
+                    //console.log(typeof data);
+                    //console.log(data)
+                    //上传后显示图片
+                    $('#dvImg').show();
+                    $('.img1').first().attr('src', data.url);
+                },
+                error: function (error) { alert(error); },
+                url: 'upload', /*设置post提交到的页面*/
+                type: "post", /*设置表单以post方法提交*/
+                dataType: "json" /*设置返回值类型为文本*/
+            });
+        })
+
+
+    </script>

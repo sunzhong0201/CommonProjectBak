@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<script src="~/js/jquery.min.js"></script>
+<script type="text/javascript">
+    function changeCheckCode() {
+        $("#img").attr("src", $("#img").attr("src") + 1);
+    }
+    //function afterLogin(data) {
+    //    var serverData = data.split(':');
+    //    if (serverData[0] == "ok") {
+    //        window.location.href = "/Home/Index"
+    //    } else {
+    //        $("#errorMsg").css("display", "block");
+    //        $("#errorMsg").text(serverData[1]);
+    //        changeCheckCode();
+    //    }
+    //}
+</script>
+
+
+
+<img id="img" src="/Login/ShowValidateCode?id=1" style="float: left; height: 24px;" />
+<div style="float: left; margin-left: 5px; margin-top: 10px;">
+    <a href="javascript:void(0)" onclick="changeCheckCode();return false;">看不清，换一张</a>
+</div>
